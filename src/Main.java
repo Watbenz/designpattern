@@ -1,4 +1,6 @@
 import duck.*;
+import goose.*;
+import pigeon.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Main {
         Quackable duckCall = new QuackCounter(new DuckCall());
         Quackable rubberDuck = new QuackCounter(new RubberDuck());
         Quackable goose = new QuackCounter(new GooseAdapter(new Goose()));
+        Quackable pigeon = new PigeonAdapter(new Pigeon());
 
         System.out.println("Duck Simulator");
 
@@ -19,6 +22,7 @@ public class Main {
         simulate(duckCall);
         simulate(rubberDuck);
         simulate(goose);
+        simulate(pigeon);
         System.out.println(QuackCounter.getQuackCount());
     }
 

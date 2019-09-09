@@ -1,4 +1,6 @@
-package duck;
+package goose;
+
+import duck.Quackable;
 
 public class GooseAdapter implements Quackable {
     private Goose goose;

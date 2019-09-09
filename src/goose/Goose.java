@@ -1,4 +1,4 @@
-package duck;
+package goose;
 
 public class Goose {
     public void honk() {
